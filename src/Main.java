@@ -38,7 +38,9 @@ public class Main {
             System.out.print("Ingrese la opción:");
             opcion3=entrada.nextInt();
             if (opcion3==1){
-                System.out.println("Insertar código respectivo");
+                System.out.println("Bienvenido a poliedros");
+                Piramide P1 = new Piramide("Piramide");
+                P1.piramide2();
             } else{
                 System.out.println("Figura 3D: cilindro");
                 System.out.print("Ingrese el valor del radio:");
