@@ -23,7 +23,7 @@ public class Main {
                 int altura = entrada.nextInt();
                 Cuadrado C1 = new Cuadrado("Cuadrado", base, altura);
                 C1.tipoCuadrado();
-            } if (opcion3 == 2){
+            } else   {
                 System.out.println("Con gusto te ayudare:");
                 System.out.println("Ingrese el valor de la base: ");
                 int base = entrada.nextInt();
