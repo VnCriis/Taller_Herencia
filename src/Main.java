@@ -2,7 +2,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int opcion, opcion2, opcion3;
-
         System.out.println("FIGURAS GEOMETRICAS Y SUS VARIACIONES");
         System.out.println("Menú");
         System.out.println("1. 2D");
@@ -15,17 +14,25 @@ public class Main {
             System.out.println("2. Irregulares");
             System.out.println("Ingrese la opcion: ");
             opcion2 = entrada.nextInt();
+            opcion3 = entrada.nextInt();
             if (opcion2 == 1) {
                 System.out.println("Binevenido");
                 System.out.println("Ingrese el valor de la base: ");
                 int base = entrada.nextInt();
                 System.out.println("Ingrese el valor de la altura: ");
                 int altura = entrada.nextInt();
-                Cuadrado C1 = new Cuadrado("Cuadrado",base,altura);
+                Cuadrado C1 = new Cuadrado("Cuadrado", base, altura);
                 C1.tipoCuadrado();
+            } if (opcion3 == 2){
+                System.out.println("Con gusto te ayudare:");
+                System.out.println("Ingrese el valor de la base: ");
+                int base = entrada.nextInt();
+                System.out.println("Ingrese el valor de la altura: ");
+                int altura = entrada.nextInt();
+                Rectangulo R1 = new Rectangulo( "Rectangulo", base, altura);
+                R1.tipoRectangulo();
             }
         }
-
     }
 }
 

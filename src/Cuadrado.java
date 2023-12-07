@@ -2,7 +2,6 @@ public class Cuadrado extends Regulares{
     public Cuadrado(String nombre) {
         super(nombre);
     }
-
     public Cuadrado(String nombre, int base, int altura) {
         super(nombre, base, altura);
     }
