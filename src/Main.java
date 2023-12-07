@@ -14,14 +14,23 @@ public class Main {
             System.out.println("2. Irregulares");
             System.out.println("Ingrese la opcion: ");
             opcion2 = entrada.nextInt();
+            opcion3 = entrada.nextInt();
             if (opcion2 == 1) {
                 System.out.println("Bienvenido");
                 System.out.println("Ingrese el valor de la base: ");
                 int base = entrada.nextInt();
                 System.out.println("Ingrese el valor de la altura: ");
                 int altura = entrada.nextInt();
-                Cuadrado C1 = new Cuadrado("Cuadrado",base,altura);
+                Cuadrado C1 = new Cuadrado("Cuadrado", base, altura);
                 C1.tipoCuadrado();
+            } else   {
+                System.out.println("Con gusto te ayudare:");
+                System.out.println("Ingrese el valor de la base: ");
+                int base = entrada.nextInt();
+                System.out.println("Ingrese el valor de la altura: ");
+                int altura = entrada.nextInt();
+                Rectangulo R1 = new Rectangulo( "Rectangulo", base, altura);
+                R1.tipoRectangulo();
             }
         } else{
             System.out.println("1. Poliedros");
